@@ -1,12 +1,12 @@
 # Ecommerce Back End
-  [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)]
+  ![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)
 
   ## Table of Contents
   1. [Description](#Description)
   2. [Installation and Instructions](#Installation/Usage)
   3. [Technologies](#Technologies)
   4. [License](#License)
-  5. [Contributors](#Contributors)
+  5. [Author](#Author)
   6. [Questions](#Questions)
   7. [User-Story](#User-Story)
   8. [Acceptance-Criteria](#Acceptance-Criteria)
@@ -16,7 +16,7 @@
   A backend to a typical internet retail site, allowing for the CREATION/UPDATE/DELETION. Application includes existing seeds in order to test API routes
 
   ## Installation/Usage
-  1
+  
 
   ## Technologies
     * Express.js
@@ -29,8 +29,8 @@
     MIT License.
     Read more at: https://choosealicense.com/licenses/mit/
 
-  ## Contributors
-  In collaboration with: Alexander Lu  
+  ## Author
+  Author: Alexander Lu  
 
   ## Questions
   For further questions, you can reach out to me by:
