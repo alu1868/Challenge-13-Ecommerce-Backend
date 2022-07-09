@@ -30,17 +30,27 @@ router.get('/:id', (req, res) => {
     where: {
       id: req.params.id
     },
-    attributes: ['id, product_name', 'price', 'stock'],
     include: [
       {
-        mode: Category,
-        attribute: ['category_name']
+        model: Category,
+        attributes: ['category_name']
       },
       {
-        mode: Tag,
+        model: Tag,
         attributes: ['tag_name']
       }
     ]
+  })
+  .then(productData => {
+    if (!productData) {
+      res.status(404).json({ message: 'No product with that ID found'})
+    } else {
+      res.json(productData)
+    }
+  })
+  .catch(err => {
+    console.log(err);
+    res.status(500).json(err)
   })
 });
 
