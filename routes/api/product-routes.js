@@ -8,20 +8,20 @@ router.get('/', (req, res) => {
   Product.findAll({
     include: [
       {
-        mode: Category,
-        attribute: ['category_name']
+        model: Category,
+        attributes: ['category_name']
       },
       {
-        mode: Tag,
+        model: Tag,
         attributes: ['tag_name']
       }
     ]
   })
-  .then(productData => res.json(productData))
-  .catch(err => {
-    console.log(err);
-    res.status(500).json(err);
-  })
+    .then(productData => res.json(productData))
+    .catch(err => {
+      console.log(err);
+      res.status(500).json(err);
+    })
 });
 
 // GET ONE PRODUCT
