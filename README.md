@@ -16,7 +16,9 @@
   A backend to a typical internet retail site, allowing for the CREATION/UPDATE/DELETION. Application includes existing seeds in order to test API routes
 
   ## Installation/Usage
+  first time users: ensure you are in the correct directory, and do a 'npm install' as well as 'npm run seed' in order to insert all seeding data. Then run 'npm start' to start the server
   
+  Link to walk through: https://drive.google.com/file/d/1yr9xtpDZ5fsbkN5LWAlwYX49LQ9CAVuz/view?usp=sharing
 
   ## Technologies
     * Express.js
